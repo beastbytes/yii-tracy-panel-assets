@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-use BeastBytes\Yii\Tracy\Panel\A as AssetsPanel;
+use BeastBytes\Yii\Tracy\Panel\Assets\Panel as AssetsPanel;
 use Yiisoft\Assets\AssetLoaderInterface;
 use Yiisoft\Assets\Debug\AssetCollector;
 use Yiisoft\Assets\Debug\AssetLoaderInterfaceProxy;
@@ -10,7 +10,7 @@ use Yiisoft\Definitions\Reference;
 
 return [
     'beastbytes/yii-tracy' => [
-        'panels' => [
+        'panelConfig' => [
             'assets' => [
                 'class' => AssetsPanel::class,
                 '__construct()' => [
