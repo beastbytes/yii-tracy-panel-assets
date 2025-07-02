@@ -16,7 +16,7 @@ final class Panel extends ProxyCollectorPanel
     private const BINARY_COLUMN = 'binary';
 
     private const COLOUR_NO_ASSETS = '#404040';
-    private const COLOUR_ASSETS = '#5d0ec0';
+    private const COLOUR_ASSETS = '#0fbfb3';
 
     private const ICON = <<<ICON
 <svg
