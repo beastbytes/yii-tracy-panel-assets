@@ -22,7 +22,7 @@ final class Panel extends ProxyCollectorPanel
     height="24px"
     viewBox="0 -960 960 960"
     width="24px"
-    fill="#e3e3e3"
+    fill="%s"
 >
     <path
         d="M80-160v-160h160v160H80Zm240 0v-160h560v160H320ZM80-400v-160h160v160H80Zm240 
