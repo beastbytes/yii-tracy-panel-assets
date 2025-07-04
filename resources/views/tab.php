@@ -4,6 +4,11 @@
  * @psalm-var array{
  *     total: int
  * } $bundles
- */
+ * @var TranslatorInterface $translator
+*/
 
-echo sprintf('%d %s', $bundles['total'], $bundles['total'] === 1 ? 'bundle' : 'bundles');
+use Yiisoft\Translator\TranslatorInterface;
+
+$translator = $translator->withDefaultCategory('tracy-assets');
+
+echo $translator->translate('assets.bundles', ['total' => $bundles['total']]);

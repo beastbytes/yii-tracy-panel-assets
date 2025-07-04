@@ -32,8 +32,6 @@ final class Panel extends ProxyCollectorPanel
 </svg>
 ICON;
 
-    private const TITLE = 'Assets';
-
     private array $tableSchemas = [];
 
     protected function panelParameters(): array
@@ -41,9 +39,12 @@ ICON;
         return ['bundles' => $this->getCollected()];
     }
 
-    protected function panelTitle(): string
+    protected function panelTitle(): array
     {
-        return self::TITLE;
+        return [
+            'id' => 'assets.title.panel',
+            'category' => 'tracy-assets',
+        ];
     }
 
     protected function tabIcon(array $parameters): string
@@ -59,8 +60,11 @@ ICON;
         return $this->getSummary();
     }
 
-    protected function tabTitle(): string
+    protected function tabTitle(): array
     {
-        return self::TITLE;
+        return [
+            'id' => 'assets.title.tab',
+            'category' => 'tracy-assets',
+        ];
     }
 }

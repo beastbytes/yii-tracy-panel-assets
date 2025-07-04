@@ -1,33 +1,37 @@
 <?php
 
-use Yiisoft\Assets\AssetBundle;
-use Yiisoft\View\WebView;
-
 /**
  * @var list<AssetBundle> $bundles
+ * @var TranslatorInterface $translator
  */
+
+use Yiisoft\Assets\AssetBundle;
+use Yiisoft\View\WebView;
+use Yiisoft\Translator\TranslatorInterface;
+
+$translator = $translator->withDefaultCategory('tracy-assets');
 ?>
 
 <table>
     <thead>
         <tr>
-            <th>Base Path</th>
-            <th>Base URL</th>
-            <th>Source Path</th>
-            <th>CDN</th>
-            <th>Depends</th>
-            <th>CSS Files</th>
-            <th>CSS Strings</th>
-            <th>CSS Options</th>
-            <th>CSS Position</th>
-            <th>JS Files</th>
-            <th>JS Strings</th>
-            <th>JS Vars</th>
-            <th>JS Options</th>
-            <th>JS Position</th>
-            <th>Export</th>
-            <th>Converter Options</th>
-            <th>Publish Options</th>
+            <th><?= $translator->translate('assets.header.base-path') ?></th>
+            <th><?= $translator->translate('assets.header.base-url') ?></th>
+            <th><?= $translator->translate('assets.header.source-path') ?></th>
+            <th><?= $translator->translate('assets.header.cdn') ?></th>
+            <th><?= $translator->translate('assets.header.depends') ?></th>
+            <th><?= $translator->translate('assets.header.css-files') ?></th>
+            <th><?= $translator->translate('assets.header.css-strings') ?></th>
+            <th><?= $translator->translate('assets.header.css-options') ?></th>
+            <th><?= $translator->translate('assets.header.css-position') ?></th>
+            <th><?= $translator->translate('assets.header.js-files') ?></th>
+            <th><?= $translator->translate('assets.header.js-strings') ?></th>
+            <th><?= $translator->translate('assets.header.js-vars') ?></th>
+            <th><?= $translator->translate('assets.header.js-options') ?></th>
+            <th><?= $translator->translate('assets.header.js-position') ?></th>
+            <th><?= $translator->translate('assets.header.export') ?></th>
+            <th><?= $translator->translate('assets.header.converter-options') ?></th>
+            <th><?= $translator->translate('assets.header.publish-options') ?></th>
         </tr>
     </thead>
     <tbody>
@@ -67,9 +71,9 @@ use Yiisoft\View\WebView;
             </td>
             <td>
                 <?= match ($bundle['cssPosition']) {
-                    WebView::POSITION_HEAD => 'Head',
-                    WebView::POSITION_BEGIN => 'Begin',
-                    WebView::POSITION_END => 'End',
+                    WebView::POSITION_BEGIN => $translator->translate('assets.value.begin'),
+                    WebView::POSITION_END => $translator->translate('assets.value.end'),
+                    WebView::POSITION_HEAD => $translator->translate('assets.value.head'),
                 } ?>
             </td>
             <td>
@@ -102,11 +106,11 @@ use Yiisoft\View\WebView;
             </td>
             <td>
                 <?= match ($bundle['jsPosition']) {
-                    WebView::POSITION_HEAD => 'Head',
-                    WebView::POSITION_BEGIN => 'Begin',
-                    WebView::POSITION_END => 'End',
-                    WebView::POSITION_READY => 'Ready',
-                    WebView::POSITION_LOAD => 'Load',
+                    WebView::POSITION_BEGIN => $translator->translate('assets.value.begin'),
+                    WebView::POSITION_END => $translator->translate('assets.value.end'),
+                    WebView::POSITION_HEAD => $translator->translate('assets.value.head'),
+                    WebView::POSITION_LOAD => $translator->translate('assets.value.load'),
+                    WebView::POSITION_READY => $translator->translate('assets.value.ready'),
                 } ?>
             </td>
             <td>
