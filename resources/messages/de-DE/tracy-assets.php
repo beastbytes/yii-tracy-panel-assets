@@ -5,7 +5,7 @@ declare(strict_types=1);
 return [
     'assets.header.base-path' => 'Basispfad',
     'assets.header.base-url' => 'Basis-URL',
-    'assets.header.bundles' => '{total, plural, =1{Bündeln} other{Pakete}}: {total, number}',
+    'assets.header.bundles' => '{total, number} {total, plural, =1{Bündeln} other{Pakete}}',
     'assets.header.cdn' => 'CDN',
     'assets.header.converter-options' => 'Konverteroptionen',
     'assets.header.css-files' => 'CSS-Dateien',

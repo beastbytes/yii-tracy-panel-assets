@@ -5,7 +5,7 @@ declare(strict_types=1);
 return [
     'assets.header.base-path' => 'Базовый путь',
     'assets.header.base-url' => 'Базовый URL&ndash;адрес',
-    'assets.header.bundles' => '{total, plural, =1{Пучок} other{Связки}}: {total, number}',
+    'assets.header.bundles' => '{total, number} {total, plural, =1{Пучок} other{Связки}}',
     'assets.header.cdn' => 'Сдк',
     'assets.header.converter-options' => 'Параметры конвертера',
     'assets.header.css-files' => 'CSS&ndash;файлы',
