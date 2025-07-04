@@ -11,6 +11,8 @@ final class Panel extends ProxyCollectorPanel
 {
     use ViewTrait;
 
+    public const MESSAGE_CATEGORY = 'tracy-assets';
+
     private const BINARY_COLUMN = 'binary';
 
     private const COLOUR_NO_ASSETS = '#404040';

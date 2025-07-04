@@ -7,8 +7,9 @@
  * @var TranslatorInterface $translator
 */
 
+use BeastBytes\Yii\Tracy\Panel\Assets\Panel;
 use Yiisoft\Translator\TranslatorInterface;
 
-$translator = $translator->withDefaultCategory('tracy-assets');
+$translator = $translator->withDefaultCategory(Panel::MESSAGE_CATEGORY);
 
 echo $translator->translate('assets.bundles', ['total' => $bundles['total']]);

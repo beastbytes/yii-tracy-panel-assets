@@ -5,11 +5,12 @@
  * @var TranslatorInterface $translator
  */
 
+use BeastBytes\Yii\Tracy\Panel\Assets\Panel;
 use Yiisoft\Assets\AssetBundle;
 use Yiisoft\View\WebView;
 use Yiisoft\Translator\TranslatorInterface;
 
-$translator = $translator->withDefaultCategory('tracy-assets');
+$translator = $translator->withDefaultCategory(Panel::MESSAGE_CATEGORY);
 ?>
 
 <table>
