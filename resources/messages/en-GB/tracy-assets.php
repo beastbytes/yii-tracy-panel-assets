@@ -3,9 +3,9 @@
 declare(strict_types=1);
 
 return [
+    'assets.bundles' => '{total, number} {total, plural, =1{Bundle} other{Bundles}}',
     'assets.header.base-path' => 'Base Path',
     'assets.header.base-url' => 'Base URL',
-    'assets.header.bundles' => '{total, number} {total, plural, =1{Bundle} other{Bundles}}',
     'assets.header.cdn' => 'CDN',
     'assets.header.converter' => 'Converter',
     'assets.header.converter-class' => 'Converter Class',
@@ -30,7 +30,6 @@ return [
     'assets.header.js-position' => 'JS Position',
     'assets.header.publish-options' => 'Publish Options',
     'assets.header.source-path' => 'Source Path',
-    'assets.no-bundles' => 'No bundles',
     'assets.title.panel' => 'Assets',
     'assets.title.tab' => 'Assets',
     'assets.value.begin' => 'Begin',

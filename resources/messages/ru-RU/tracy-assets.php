@@ -3,9 +3,9 @@
 declare(strict_types=1);
 
 return [
+    'assets.bundles' => '{total, number} {total, plural, =1{Пучок} other{Связки}}',
     'assets.header.base-path' => 'Базовый путь',
     'assets.header.base-url' => 'Базовый URL&ndash;адрес',
-    'assets.header.bundles' => '{total, number} {total, plural, =1{Пучок} other{Связки}}',
     'assets.header.cdn' => 'Сдк',
     'assets.header.converter-options' => 'Параметры конвертера',
     'assets.header.css-files' => 'CSS&ndash;файлы',
@@ -21,7 +21,6 @@ return [
     'assets.header.js-position' => 'Позиция JS',
     'assets.header.publish-options' => 'Параметры публикации',
     'assets.header.source-path' => 'Исходный путь',
-    'assets.no-bundles' => 'Нет пакетов',
     'assets.title.panel' => 'Ресурсы',
     'assets.title.tab' => 'Ресурсы',
     'assets.value.begin' => 'Начинать',
