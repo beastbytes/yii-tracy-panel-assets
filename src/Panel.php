@@ -45,7 +45,7 @@ ICON;
     {
         return [
             'id' => 'assets.title.panel',
-            'category' => 'tracy-assets',
+            'category' => self::MESSAGE_CATEGORY,
         ];
     }
 
@@ -66,7 +66,7 @@ ICON;
     {
         return [
             'id' => 'assets.title.tab',
-            'category' => 'tracy-assets',
+            'category' => self::MESSAGE_CATEGORY,
         ];
     }
 }
