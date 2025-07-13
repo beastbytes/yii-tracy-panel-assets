@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "96befad4af105f15825d22cf633b5b3d",
+    "content-hash": "96042f2de1ec3e724f1276c2ac3a3325",
     "packages": [
         {
             "name": "beastbytes/yii-tracy",
@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/beastbytes/yii-tracy.git",
-                "reference": "f365323db2ec55f2557e6318a7b25a2928bc877e"
+                "reference": "80404fb4e7b269014b59881e598f0381963832c3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/beastbytes/yii-tracy/zipball/f365323db2ec55f2557e6318a7b25a2928bc877e",
-                "reference": "f365323db2ec55f2557e6318a7b25a2928bc877e",
+                "url": "https://api.github.com/repos/beastbytes/yii-tracy/zipball/80404fb4e7b269014b59881e598f0381963832c3",
+                "reference": "80404fb4e7b269014b59881e598f0381963832c3",
                 "shasum": ""
             },
             "require": {
@@ -36,7 +36,8 @@
                 "vimeo/psalm": "^5.0",
                 "yiisoft/di": "^1.0",
                 "yiisoft/dummy-provider": "^1.0",
-                "yiisoft/test-support": "^3.0"
+                "yiisoft/test-support": "^3.0",
+                "yiisoft/translator-message-php": "^1.0"
             },
             "default-branch": true,
             "type": "library",
@@ -70,7 +71,7 @@
                 "issues": "https://github.com/beastbytes/yii-tracy/issues",
                 "source": "https://github.com/beastbytes/yii-tracy/tree/main"
             },
-            "time": "2025-07-04T15:15:58+00:00"
+            "time": "2025-07-06T19:25:30+00:00"
         },
         {
             "name": "guzzlehttp/psr7",
@@ -3766,16 +3767,16 @@
         },
         {
             "name": "myclabs/deep-copy",
-            "version": "1.13.2",
+            "version": "1.13.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/myclabs/DeepCopy.git",
-                "reference": "d25e62e636b0a9b01e3bdebb7823b474876dd829"
+                "reference": "faed855a7b5f4d4637717c2b3863e277116beb36"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/d25e62e636b0a9b01e3bdebb7823b474876dd829",
-                "reference": "d25e62e636b0a9b01e3bdebb7823b474876dd829",
+                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/faed855a7b5f4d4637717c2b3863e277116beb36",
+                "reference": "faed855a7b5f4d4637717c2b3863e277116beb36",
                 "shasum": ""
             },
             "require": {
@@ -3814,7 +3815,7 @@
             ],
             "support": {
                 "issues": "https://github.com/myclabs/DeepCopy/issues",
-                "source": "https://github.com/myclabs/DeepCopy/tree/1.13.2"
+                "source": "https://github.com/myclabs/DeepCopy/tree/1.13.3"
             },
             "funding": [
                 {
@@ -3822,7 +3823,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-07-04T14:07:32+00:00"
+            "time": "2025-07-05T12:25:42+00:00"
         },
         {
             "name": "netresearch/jsonmapper",
@@ -4226,16 +4227,16 @@
         },
         {
             "name": "phpstan/phpdoc-parser",
-            "version": "2.1.0",
+            "version": "2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpdoc-parser.git",
-                "reference": "9b30d6fd026b2c132b3985ce6b23bec09ab3aa68"
+                "reference": "b9e61a61e39e02dd90944e9115241c7f7e76bfd8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpdoc-parser/zipball/9b30d6fd026b2c132b3985ce6b23bec09ab3aa68",
-                "reference": "9b30d6fd026b2c132b3985ce6b23bec09ab3aa68",
+                "url": "https://api.github.com/repos/phpstan/phpdoc-parser/zipball/b9e61a61e39e02dd90944e9115241c7f7e76bfd8",
+                "reference": "b9e61a61e39e02dd90944e9115241c7f7e76bfd8",
                 "shasum": ""
             },
             "require": {
@@ -4267,9 +4268,9 @@
             "description": "PHPDoc parser with support for nullable, intersection and generic types",
             "support": {
                 "issues": "https://github.com/phpstan/phpdoc-parser/issues",
-                "source": "https://github.com/phpstan/phpdoc-parser/tree/2.1.0"
+                "source": "https://github.com/phpstan/phpdoc-parser/tree/2.2.0"
             },
-            "time": "2025-02-19T13:28:12+00:00"
+            "time": "2025-07-13T07:04:09+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",
@@ -4594,16 +4595,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "10.5.47",
+            "version": "10.5.48",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "3637b3e50d32ab3a0d1a33b3b6177169ec3d95a3"
+                "reference": "6e0a2bc39f6fae7617989d690d76c48e6d2eb541"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/3637b3e50d32ab3a0d1a33b3b6177169ec3d95a3",
-                "reference": "3637b3e50d32ab3a0d1a33b3b6177169ec3d95a3",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/6e0a2bc39f6fae7617989d690d76c48e6d2eb541",
+                "reference": "6e0a2bc39f6fae7617989d690d76c48e6d2eb541",
                 "shasum": ""
             },
             "require": {
@@ -4613,7 +4614,7 @@
                 "ext-mbstring": "*",
                 "ext-xml": "*",
                 "ext-xmlwriter": "*",
-                "myclabs/deep-copy": "^1.13.1",
+                "myclabs/deep-copy": "^1.13.3",
                 "phar-io/manifest": "^2.0.4",
                 "phar-io/version": "^3.2.1",
                 "php": ">=8.1",
@@ -4675,7 +4676,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues",
                 "security": "https://github.com/sebastianbergmann/phpunit/security/policy",
-                "source": "https://github.com/sebastianbergmann/phpunit/tree/10.5.47"
+                "source": "https://github.com/sebastianbergmann/phpunit/tree/10.5.48"
             },
             "funding": [
                 {
@@ -4699,7 +4700,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-06-20T11:29:11+00:00"
+            "time": "2025-07-11T04:07:17+00:00"
         },
         {
             "name": "sebastian/cli-parser",
@@ -5971,19 +5972,20 @@
         },
         {
             "name": "yiisoft/dummy-provider",
-            "version": "1.0.1",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/dummy-provider.git",
-                "reference": "a1a4306a50d7f4f74c7ff1850c5f1a8d64b5e470"
+                "reference": "5974e13f9228a445b287d84676aa1a8021a05eb9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/dummy-provider/zipball/a1a4306a50d7f4f74c7ff1850c5f1a8d64b5e470",
-                "reference": "a1a4306a50d7f4f74c7ff1850c5f1a8d64b5e470",
+                "url": "https://api.github.com/repos/yiisoft/dummy-provider/zipball/5974e13f9228a445b287d84676aa1a8021a05eb9",
+                "reference": "5974e13f9228a445b287d84676aa1a8021a05eb9",
                 "shasum": ""
             },
             "provide": {
+                "yiisoft/db-implementation": "1.0.0",
                 "yiisoft/router-implementation": "1.0.0"
             },
             "type": "library",
@@ -6005,23 +6007,24 @@
                 "testing"
             ],
             "support": {
+                "chat": "https://t.me/yii3en",
                 "forum": "https://www.yiiframework.com/forum/",
-                "irc": "irc://irc.freenode.net/yii",
+                "irc": "ircs://irc.libera.chat:6697/yii",
                 "issues": "https://github.com/yiisoft/dummy-provider/issues?state=open",
                 "source": "https://github.com/yiisoft/dummy-provider",
                 "wiki": "https://www.yiiframework.com/wiki/"
             },
             "funding": [
                 {
-                    "url": "https://github.com/yiisoft",
+                    "url": "https://github.com/sponsors/yiisoft",
                     "type": "github"
                 },
                 {
                     "url": "https://opencollective.com/yiisoft",
-                    "type": "open_collective"
+                    "type": "opencollective"
                 }
             ],
-            "time": "2024-02-05T12:33:40+00:00"
+            "time": "2025-07-07T13:18:59+00:00"
         },
         {
             "name": "yiisoft/test-support",
