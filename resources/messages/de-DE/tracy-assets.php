@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 return [
-    'assets.bundles' => '{total, number} {total, plural, =1{Bündeln} other{Pakete}}',
+    'assets.bundles' => '{total, number}&nbsp;{total, plural, =1{Bündeln} other{Pakete}}',
     'assets.header.base-path' => 'Basispfad',
     'assets.header.base-url' => 'Basis-URL',
     'assets.header.cdn' => 'CDN',
