@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 return [
-    'assets.bundles' => '{total, number}&nbsp;{total, plural, =1{Пучок} other{Связки}}',
+    'assets.bundles' => '{total, number}&nbsp;{total, plural, =1{Объект} other{Ресурсы}}',
     'assets.header.base-path' => 'Базовый путь',
     'assets.header.base-url' => 'Базовый URL&ndash;адрес',
     'assets.header.cdn' => 'Сдк',
