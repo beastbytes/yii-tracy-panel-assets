@@ -18,7 +18,6 @@ use Yiisoft\Assets\AssetLoader;
 use Yiisoft\Assets\AssetLoaderInterface;
 use Yiisoft\Assets\Debug\AssetCollector;
 use Yiisoft\Assets\Debug\AssetLoaderInterfaceProxy;
-use Yiisoft\Strings\Inflector;
 use Yiisoft\Test\Support\Container\SimpleContainer;
 use Yiisoft\Translator\IntlMessageFormatter;
 use Yiisoft\Translator\CategorySource;
