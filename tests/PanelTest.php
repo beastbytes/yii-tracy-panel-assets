@@ -2,11 +2,11 @@
 
 namespace BeastBytes\Yii\Tracy\Panel\Assets\Tests;
 
+use BeastBytes\Yii\Tracy\ContainerProxy;
 use BeastBytes\Yii\Tracy\Panel\Assets\Panel;
 use BeastBytes\Yii\Tracy\Panel\Assets\Tests\Support\assetBundles\FirstAsset;
 use BeastBytes\Yii\Tracy\Panel\Assets\Tests\Support\assetBundles\SecondAsset;
 use BeastBytes\Yii\Tracy\Panel\Assets\Tests\Support\assetBundles\ThirdAsset;
-use BeastBytes\Yii\Tracy\ProxyContainer;
 use PHPUnit\Framework\Attributes\After;
 use PHPUnit\Framework\Attributes\Before;
 use PHPUnit\Framework\Attributes\DataProvider;
@@ -81,7 +81,7 @@ TAB;
     private static Aliases $aliases;
     private static AssetCollector $collector;
     private static ContainerInterface $container;
-    private static ContainerInterface $proxyContainer;
+    private static ContainerInterface $containerProxy;
 
     private ?Panel $panel = null;
 
@@ -132,8 +132,8 @@ TAB;
             ],
         ));
 
-        self::$proxyContainer = new ProxyContainer(self::$container);
-        $this->panel = $this->panel->withContainer(self::$proxyContainer);
+        self::$containerProxy = new ContainerProxy(self::$container);
+        $this->panel = $this->panel->withContainer(self::$containerProxy);
         $this->panel->startup();
     }
 
@@ -151,7 +151,7 @@ TAB;
     public function assets(array $assets): void
     {
         foreach ($assets as $asset) {
-            self::$proxyContainer->get(AssetLoaderInterface::class)->loadBundle($asset);
+            self::$containerProxy->get(AssetLoaderInterface::class)->loadBundle($asset);
         }
 
         $this->assertStringMatchesFormat(
